@@ -13,11 +13,11 @@ data['month'] = pd.DatetimeIndex(data['DATE_UPDATED']).month
 vaccination = data.groupby(['month'])[['TOTAL_VACCINATIONS', 'PERSONS_FULLY_VACCINATED','PERSONS_VACCINATED_1PLUS_DOSE']].sum()#.sort_values()
 vaccination['month'] = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November']
 
-#conversion of PERSONS_FULLY_VACCINATED/PERSONS_VACCINATED_1PLUS_DOSE on y-axis for proper visualisation of the graph.
+#conversion of PERSONS_FULLY_VACCINATED/1000 on y-axis for proper visualisation of the graph.
 vaccination['fully_vaccinated_by_1m'] = vaccination['PERSONS_FULLY_VACCINATED']/1000000
 print(vaccination['fully_vaccinated_by_1m'])
 
-#conversion of PERSONS_FULLY_VACCINATED and PERSONS_VACCINATED_1PLUS_DOSE on y-axis for proper visualisation on the graph.  
+#conversion of PERSONS_VACCINATED_1PLUS_DOSE/1000 on y-axis for proper visualisation on the graph.
 vaccination['persons_vaccinated_1plus_dose_by_1m'] = vaccination['PERSONS_VACCINATED_1PLUS_DOSE']/1000000
 print(vaccination['persons_vaccinated_1plus_dose_by_1m'])
 
