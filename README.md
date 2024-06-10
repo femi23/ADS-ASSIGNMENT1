@@ -3,4 +3,5 @@ following factors on climate change were investigated: total greenhouse gas emis
 population (% of total), Forest area, Arable land, Manufacturing revenue and GDP.
 The analysis found some correlations between the factors and causes behind them were investigated
 The attached PDF provides full Insights to climate chage analysis.
+
 [Climate Change_report.pdf](https://github.com/user-attachments/files/15764680/Climate.Change_report.pdf)
